@@ -1,4 +1,11 @@
-/* Fundo com imagem fixa e caixas transparentes */
+/* Configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('fundo2.png'); /*imagem */
@@ -9,20 +16,8 @@ body {
     color: #333;
     padding: 20px;
     margin: 0;
-}
-
-/* Logo */
-.logo {
-    display: block;
-    margin: 0 auto 20px;
-    max-width: 150px;
-}
-
-/* Ajuste para logos pequenas nos produtos */
-.logo-produto {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Efeito LED nas bordas */
@@ -42,96 +37,172 @@ body {
     100% { box-shadow: 0 0 10px rgba(255, 0, 145, 0.8); }
 }
 
-/* Centralizando o título */
-.section-header {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #004d13;
-    font-size: 2rem;
+/* Logo e cabeçalho */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
 }
 
-/* Container de Produtos */
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff0091;
+}
+
+header h1 {
+    color: #004d13;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+header p {
+    color: #333;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Seções */
+.section-box {
+    background-color: transparent; /* Caixa transparente */
+    padding: 30px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid #ff0091; /* Borda leve */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-box h2 {
+    text-align: center;
+    color: #004d13;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.section-box p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Botões de chamada para ação */
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0091;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #cc0074;
+}
+
+/* Produtos */
 .product-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
-/* Itens de Produtos */
 .product-item {
-    background-color: #fff;
-    border: 2px solid #ff0091;
-    border-radius: 10px;
-    padding: 20px;
     text-align: center;
-    max-width: 250px;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 15px;
+    background-color: transparent; /* Caixa transparente */
+    border: 1px solid #ff0091; /* Borda leve */
+    border-radius: 5px;
     transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-item:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
-/* Texto dos produtos */
-.product-text {
+.product-item img.logo-produto {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-text h4 {
+    color: #004d13;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.product-text p {
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.product-text .button {
+    color: #ff0091;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product-text .button:hover {
+    text-decoration: underline;
+}
+
+/* Depoimentos */
+blockquote {
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+    background-color: transparent;
+    border-left: 4px solid #ff0091;
+}
+
+footer {
     text-align: center;
+    padding: 20px;
+    background-color: #004d13;
+    color: #fff;
 }
 
-/* Formulário */
-form {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 80%;
-    max-width: 400px;
-}
-
-form button {
-    background-color: #ff0091;
-    color: rgba(9, 99, 29, 0.8);;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #e6007e;
+footer p {
+    margin: 5px 0;
 }
 
 /* Redes sociais */
 .social-media {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .social-box {
     display: flex;
     align-items: center;
-    background-color: rgba(248, 248, 248, 0.8); /* Fundo semi-transparente */
+    background-color: rgba(248, 248, 248, 0.8);
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 0 10px;
     padding: 10px;
-    text-align: center;
     transition: background-color 0.3s;
 }
 
@@ -146,40 +217,34 @@ form button:hover {
     margin-right: 10px;
 }
 
-
-/* Rodapé */
-footer {
+/* Formulário */
+form {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
+}
+
+form input[type="email"] {
     padding: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-.cta {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff0091;
-    color: white;
-    text-decoration: none;
+    font-size: 1rem;
+    width: 70%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 20px;
 }
 
-.cta:hover {
-    background-color: #105d18;
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #004d13;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
-.contato {
-    background-color: #105d18;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
+form button[type="submit"]:hover {
+    background-color: #ff0091;
 }
+
