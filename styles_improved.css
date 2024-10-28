@@ -85,6 +85,7 @@ header p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .section-box h2 {
     text-align: center;
     color: #004d13;
@@ -199,8 +200,8 @@ footer p {
 .social-box {
     display: flex;
     align-items: center;
-    background-color: rgba(248, 248, 248, 0.8);
-    border: 1px solid #ccc;
+    background-color: transparent; /* Caixa transparente */
+    border: 1px solid #ff0091;
     border-radius: 5px;
     padding: 10px;
     transition: background-color 0.3s;
@@ -247,4 +248,3 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #ff0091;
 }
-
