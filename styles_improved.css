@@ -27,6 +27,11 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Efeito esbranquiçado ao passar o mouse */
+.section-box:hover {
+    background-color:rgba(248, 248, 248, 0.8); /* Efeito esbranquiçado */
+}
+
 
 /* Efeito LED nas bordas */
 .section-box {
@@ -256,4 +261,5 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #ff0091;
 }
+
 
