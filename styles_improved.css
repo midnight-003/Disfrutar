@@ -20,6 +20,14 @@ body {
     line-height: 1.5;
 }
 
+.section-box:hover,
+.product-item:hover,
+.social-box:hover {
+    transform: scale(1.05); /* Aumenta a caixa ligeiramente */
+    transition: transform 0.3s ease;
+}
+
+
 /* Efeito LED nas bordas */
 .section-box {
     background-color: rgba(248, 248, 248, 0.8);
@@ -248,3 +256,4 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #ff0091;
 }
+
