@@ -223,7 +223,7 @@ footer p {
 }
 
 .social-box:hover {
-    background-color: #ff0091;
+    background-color: transparent;
     color: white;
 }
 
