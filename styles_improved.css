@@ -216,7 +216,7 @@ footer p {
     align-items: center;
     /*background-color: transparent; /* Caixa transparente */
     background-color: #ffd9ef;
-    border: 1px solid #ff0091;
+    border: 1px solid #ffd9ef;
     border-radius: 5px;
     padding: 10px;
     transition: background-color 0.3s;
