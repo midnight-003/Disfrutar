@@ -88,7 +88,8 @@ header p {
 
 /* Seções */
 .section-box {
-    background-color: transparent; /* Caixa transparente */
+    /*background-color: transparent; /* Caixa transparente */
+    background-color:  #cc0074;
     padding: 30px 20px;
     margin: 20px auto;
     width: 90%;
