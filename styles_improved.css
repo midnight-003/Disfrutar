@@ -220,13 +220,15 @@ footer p {
 
 .social-box {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
     text-decoration: none; /* Remove o sublinhado do link */
     background-color: #ffd9ef;
     border: 1px solid #ffd9ef;
     border-radius: 5px;
     padding: 10px;
     transition: background-color 0.3s, color 0.3s;
+    text-align: center; /* Centraliza o texto */
 }
 
 .social-box:hover {
@@ -237,9 +239,8 @@ footer p {
 .social-icon {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Adiciona espaçamento entre a logo e o texto */
 }
-
 
 /* Formulário */
 form {
