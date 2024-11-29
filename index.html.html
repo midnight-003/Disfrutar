@@ -11,11 +11,13 @@
         
         p {
             text-align: justify;
-            text-justify: inter-word;
-            word-spacing: -1px;
-            letter-spacing: 0.5px;
-            hyphens: auto;
+            hyphens: auto; /* Permite hifens */
+            overflow-wrap: break-word; /* Evita lacunas */
+            word-break: break-word; /* Força quebra de palavras longas */
+            word-spacing: -0.5px; /* Ajuste fino no espaço entre palavras */
+            letter-spacing: 0.5px; /* Ajuste fino no espaço entre letras */
         }
+        
         h1 {
             text-align: center;
             margin-bottom: 20px;
