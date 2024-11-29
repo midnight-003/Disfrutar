@@ -139,11 +139,18 @@ header p {
 }
 
 .product-item {
+    background-color: rgba(248, 248, 248, 0.8);
+    border: 2px solid #232323;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    animation: ledBlink 1.5s infinite;
     text-align: center;
     width: 45%;
-    padding: 15px;
+    /*padding: 15px;*/
     background-color: transparent; /* Caixa transparente */
-    border: 1px solid #ff0091; /* Borda leve */
+    /*border: 1px solid #ff0091; /* Borda leve */
     border-radius: 5px;
     transition: transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
