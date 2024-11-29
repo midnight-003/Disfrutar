@@ -213,22 +213,21 @@ footer p {
 /* Redes sociais */
 .social-media {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Centraliza os itens no contêiner */
+    gap: 20px; /* Espaçamento entre as caixas */
     margin-top: 20px;
 }
 
 .social-box {
-    display: flex;
-    flex-direction: column; /* Alinha verticalmente ícone e texto */
-    align-items: center; /* Centraliza horizontalmente */
+    display: flex; /* Coloca o ícone e o texto lado a lado */
+    align-items: center; /* Centraliza verticalmente o ícone e o texto */
     text-decoration: none; /* Remove o sublinhado */
     background-color: #ffd9ef;
     border: 1px solid #ffd9ef;
     border-radius: 5px;
-    padding: 20px; /* Espaçamento interno */
+    padding: 10px 20px; /* Espaçamento interno */
     transition: background-color 0.3s, color 0.3s;
-    width: 100px; /* Define uma largura fixa para padronizar as caixas */
+    gap: 10px; /* Espaço entre a logo e o texto */
 }
 
 .social-box:hover {
@@ -236,10 +235,13 @@ footer p {
     color: white;
 }
 
+.social-box a {
+    text-decoration: none; /* Garante que não haja sublinhado */
+}
+
 .social-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+    width: 30px; /* Tamanho da logo */
+    height: 30px;
 }
 
 /* Formulário */
