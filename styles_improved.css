@@ -214,12 +214,12 @@ footer p {
 .social-box {
     display: flex;
     align-items: center;
-    /*background-color: transparent; /* Caixa transparente */
+    text-decoration: none; /* Remove o sublinhado do link */
     background-color: #ffd9ef;
     border: 1px solid #ffd9ef;
     border-radius: 5px;
     padding: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .social-box:hover {
@@ -232,6 +232,7 @@ footer p {
     height: 40px;
     margin-right: 10px;
 }
+
 
 /* Formulário */
 form {
