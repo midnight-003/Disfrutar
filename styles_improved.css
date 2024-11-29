@@ -219,6 +219,13 @@ footer p {
 }
 
 .social-box {
+    background-color: rgba(248, 248, 248, 0.8);
+    border: 2px solid #232323;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    animation: ledBlink 1.5s infinite;
     display: flex; /* Coloca o ícone e o texto lado a lado */
     align-items: center; /* Centraliza verticalmente o ícone e o texto */
     text-decoration: none; /* Remove o sublinhado */
